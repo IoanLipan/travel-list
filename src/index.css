@@ -39,7 +39,7 @@ h1 {
 
 .add-form {
   background-color: #e5771f;
-  padding: 2.8rem 0;
+  padding: 2.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -128,5 +128,53 @@ input[type="checkbox"] {
   background-color: #76c7ad;
   text-align: center;
   font-weight: 700;
-  padding: 3.2rem 0;
+  padding: 3.2rem;
+}
+
+@media (max-width: 768px) {
+  /* Your responsive CSS rules go here */
+  .app {
+    grid-template-rows: auto auto 1fr auto;
+  }
+
+  h1 {
+    font-size: 6rem;
+    word-spacing: 20px;
+    letter-spacing: -3px;
+  }
+
+  .add-form {
+    padding: 2rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  h3 {
+    margin-right: 0;
+    font-size: 2rem;
+  }
+
+  .list ul {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .list li {
+    margin: 0 auto;
+    gap: 0.8rem;
+  }
+
+  input[type="checkbox"] {
+    height: 1.6rem;
+    width: 1.6rem;
+  }
+
+  .list li button {
+    font-size: 1.6rem;
+    padding: 0.6rem;
+    transform: none;
+  }
+
+  .stats {
+    padding: 2.4rem;
+  }
 }
